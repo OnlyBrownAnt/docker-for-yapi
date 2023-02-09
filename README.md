@@ -39,7 +39,7 @@ git clone https://github.com/YMFE/yapi.git vendors
 // 或者下载 zip 包解压到 vendors 目录（clone 整个仓库大概 140+ M，可以通过 `git clone --depth=1 https://github.com/YMFE/yapi.git vendors` 命令减少，大概 10+ M）
 ```
 
-#### 
+#### 创建docker网络
 ```shell
 docker network create yapi_default
 ```
