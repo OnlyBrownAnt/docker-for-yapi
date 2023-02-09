@@ -33,6 +33,12 @@ mongoDB数据库管理(express): http://127.0.0.1:8081
 > 
 > 假设node docker容器ID(CONTAINER ID)是5c1d09ec15c3
 
+#### 下载YApi Git仓库
+```shell
+git clone https://github.com/YMFE/yapi.git vendors 
+// 或者下载 zip 包解压到 vendors 目录（clone 整个仓库大概 140+ M，可以通过 `git clone --depth=1 https://github.com/YMFE/yapi.git vendors` 命令减少，大概 10+ M）
+```
+
 #### 
 ```shell
 docker network create yapi_default
@@ -60,11 +66,6 @@ mongosh "mongodb://root:password@127.0.0.1:27017"
 use yapi 
 
 db.createUser({user:"root",pwd:"password",roles:[{"role":"readWrite","db":"yapi"}]})
-```
-#### 下载YApi Git仓库
-```shell
-git clone https://github.com/YMFE/yapi.git vendors 
-// 或者下载 zip 包解压到 vendors 目录（clone 整个仓库大概 140+ M，可以通过 `git clone --depth=1 https://github.com/YMFE/yapi.git vendors` 命令减少，大概 10+ M）
 ```
 #### YApi配置文件
 1. 查看当前docker局部网络的ip情况，获取mongoDB docker的IP
