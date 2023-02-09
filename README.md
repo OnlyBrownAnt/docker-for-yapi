@@ -1,7 +1,7 @@
 ### 介绍
 通过docker快速内网部署YApi Mock服务平台
 
-GitHub仓库: 
+GitHub仓库: https://github.com/OnlyBrownAnt/docker-for-yapi
 
 ### 准备资料
 1. 已安装过docker
