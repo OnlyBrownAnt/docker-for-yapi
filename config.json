@@ -1,0 +1,13 @@
+{
+  "port": "3000",
+  "adminAccount": "root@email.com",
+  "timeout":120000,
+  "db": {
+    "servername": "192.168.80.2",
+    "DATABASE": "yapi",
+    "port": 27017,
+    "user": "root",
+    "pass": "password",
+    "authSource": "admin"
+  }
+}
