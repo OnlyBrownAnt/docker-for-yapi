@@ -46,11 +46,11 @@ docker network create yapi_default
 #### 执行docker.yml
 > 部署mongoDB、mongo-express、node
 > 
-> docker-compose -f docker-compose-1.yml up -d
+> docker-compose -f docker-compose.yml up -d
 > 
 > 运行http://127.0.0.1:8081能查看到数据库信息，即安装成功
 
-#### 进入mongoDB配置访问用户
+#### 进入mongoDB配置访问用户(可选)
 1. 查看当前docker列表，获取当前mongoDB docker的容器ID(CONTAINER ID)
 ```shell
 docker ps -a
