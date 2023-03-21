@@ -3,7 +3,7 @@
   "adminAccount": "root@email.com",
   "timeout":120000,
   "db": {
-    "servername": "192.168.80.2",
+    "servername": "172.18.0.2",
     "DATABASE": "yapi",
     "port": 27017,
     "user": "root",

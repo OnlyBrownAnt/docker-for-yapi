@@ -3,3 +3,4 @@ log/
 init.lock
 yarn.lock
 vendors/package-lock.json
+*/package-lock.json

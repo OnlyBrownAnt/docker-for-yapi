@@ -48,7 +48,9 @@ docker network create yapi_default
 > 
 > docker-compose -f docker-compose.yml up -d
 > 
-> 运行http://127.0.0.1:8081能查看到数据库信息，即安装成功
+> 运行http://127.0.0.1:8081
+>
+> 能查看到数据库信息，即安装成功
 
 #### 进入mongoDB配置访问用户(可选)
 1. 查看当前docker列表，获取当前mongoDB docker的容器ID(CONTAINER ID)
@@ -72,6 +74,7 @@ db.createUser({user:"root",pwd:"password",roles:[{"role":"readWrite","db":"yapi"
 ```shell
 docker network inspect yapi_default
 ```
+> 网络名称可能会变化，可以通过docker network ls 查看所有的网络来找到有yapi尾缀的网络。
 > 假设得到mongoDB docker所分配的是192.168.80.2/20
 2. YApi配置文件config.json，设置mongoDB地址为步骤1中得到的192.168.80.2
 3. 设置config.json中db.authSource="admin"
@@ -83,7 +86,7 @@ docker ps -a
 ```
 3. 进入容器
 ```shell
-docker exec -it 5c1d09ec15c3 /bin/bash
+docker exec -it 5c1d09ec15c3 /bin/sh
 ```
 4. 执行以下命令
 ```shell
